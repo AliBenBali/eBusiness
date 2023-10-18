@@ -15,7 +15,7 @@
         return round($brutto, 2);
     }
 
-    for ($i = 1; $i <= 10; $i++) {
+    for ($i = 1 ; $i <= 10; $i++) {
         echo "Netto ", $i, " ist Brutto ", nettoZuBrutto($i), "</br> \n";
     }
 
