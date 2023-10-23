@@ -6,14 +6,21 @@
     <meta name="author" content="AliBenBali">
     <meta name="Beschreibung" content="Bruh">
     <meta charset="UTF-8">
+    <style>
+    .error {
+        color: #FF0000;
+    }
+    </style>
     <title>Infomaterial</title>
 </head>
 
 <body>
     <?php
+    // define variables and set to empty values
     $nameErr = $strasseErr = $plzErr = $ortErr = "";
     $info = $name = $strasse = $plz = $ort = $jahreszeit = $wuensche = "";
 
+    //Check if values are not empty and if they are valid
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $info = $_POST["info"];
         if (empty($_POST["name"])) {
@@ -39,7 +46,7 @@
         $jahreszeit = $_POST["jahreszeit"];
         $wuensche = $_POST["wuensche"];
     }
-
+    //Check if input is valid
     function test_input($data)
     {
         $data = trim($data);
@@ -48,8 +55,10 @@
         return $data;
     }
     ?>
+    <!-- Formular -->
     <form name="Infomaterial" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
         <h1>Infomaterial</h1>
+        <p><span class="error">* required field</span></p>
         <p>Bitte senden Sie mir Infomaterial!</p>
 
         <table class="infoTabelle">
@@ -70,7 +79,9 @@
                     <label for="i2">Name:</label>
                 </td>
                 <td>
+
                     <input type="text" id="i2" name="name" autofocus>
+                    <span class="error">* <?php echo $nameErr;?></span>
                 </td>
             </tr>
             <tr>
@@ -79,6 +90,7 @@
                 </td>
                 <td>
                     <input type="text" name="strasse" id="i3">
+                    <span class="error">* <?php echo $strasseErr;?></span>
                 </td>
             </tr>
             <tr>
@@ -86,7 +98,8 @@
                     <label for="">Plz</label>
                 </td>
                 <td>
-                    <input type="text" name="plz" maxlength="5" style="width: 40px;" pattern="[0-9]+" required>
+                    <input type="text" name="plz" maxlength="5" style="width: 40px;" pattern="[0-9]+">
+                    <span class="error">* <?php echo $plzErr;?></span>
                 </td>
             </tr>
             <tr>
@@ -95,6 +108,7 @@
                 </td>
                 <td>
                     <input type="text" name="ort" required>
+                    <span class="error">* <?php echo $ortErr;?></span>
                 </td>
             </tr>
         </table>
@@ -123,7 +137,7 @@
         <input type="submit" value="absenden" />
         <input type="reset" value="Formular leeren">
     </form>
-
+    <!-- Showing posted values-->
     <p>Anrede: <?php echo empty($info) ? '' : $info; ?></p>
     <p>Name: <?php echo empty($name) ? '' : $name; ?></p>
     <p>Strasse: <?php echo empty($strasse) ? '' : $strasse; ?></p>
