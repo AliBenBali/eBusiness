@@ -10,7 +10,45 @@
 </head>
 
 <body>
-    <form name="Infomaterial" action="script.php">
+    <?php
+    $nameErr = $strasseErr = $plzErr = $ortErr = "";
+    $info = $name = $strasse = $plz = $ort = $jahreszeit = $wuensche = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $info = $_POST["info"];
+        if (empty($_POST["name"])) {
+            $nameErr = "Name is required";
+        } else {
+            $name = test_input($_POST["name"]);
+        }
+        if (empty($_POST["strasse"])) {
+            $strasseErr = "Strasse is required";
+        } else {
+            $strasse = test_input($_POST["strasse"]);
+        }
+        if (empty($_POST["plz"])) {
+            $plzErr = "Plz is required";
+        } else {
+            $plz = test_input($_POST["plz"]);
+        }
+        if (empty($_POST["ort"])) {
+            $ortErr = "Ort is required";
+        } else {
+            $ort = test_input($_POST["ort"]);
+        }
+        $jahreszeit = $_POST["jahreszeit"];
+        $wuensche = $_POST["wuensche"];
+    }
+
+    function test_input($data)
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    ?>
+    <form name="Infomaterial" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
         <h1>Infomaterial</h1>
         <p>Bitte senden Sie mir Infomaterial!</p>
 
@@ -48,7 +86,7 @@
                     <label for="">Plz</label>
                 </td>
                 <td>
-                    <input type="text" name="plz" maxlength=" 5" style="width: 40px;" pattern="[0-9]+" required>
+                    <input type="text" name="plz" maxlength="5" style="width: 40px;" pattern="[0-9]+" required>
                 </td>
             </tr>
             <tr>
@@ -78,33 +116,22 @@
         </table>
 
         <br> <br>
-        <label for=" t1">Ich habe folgende Wünsche:</label>
+        <label for="t1">Ich habe folgende Wünsche:</label>
         <br>
         <textarea name="wuensche" id="t1" cols="28" rows="4"></textarea>
         <br> <br>
         <input type="submit" value="absenden" />
         <input type="reset" value="Formular leeren">
-
     </form>
 
-    <?php
-    if (isset($info)) {
-        echo "Anrede: " . $info . "<br>";
-    }
-    if (isset($name)) {
-        echo "Name: " . $name . "<br>";
-    }
-    if (isset($strasse)) {
-        echo "Strasse: " . $strasse . "<br>";
-    }
-    if (isset($plz)) {
-        echo "Plz: " . $plz . "<br>";
-    }
-    if (isset($ort)) {
-        echo "Ort: " . $ort . "<br>";
-    }
+    <p>Anrede: <?php echo empty($info) ? '' : $info; ?></p>
+    <p>Name: <?php echo empty($name) ? '' : $name; ?></p>
+    <p>Strasse: <?php echo empty($strasse) ? '' : $strasse; ?></p>
+    <p>PLZ: <?php echo empty($plz) ? '' : $plz; ?></p>
+    <p>Ort: <?php echo empty($ort) ? '' : $ort; ?></p>
+    <p>Ich beabsichtige einen Aufenthalt: <?php echo empty($jahreszeit) ? '' : $jahreszeit; ?></p>
+    <p>Ich habe folgende Wünsche: <?php echo empty($wuensche) ? '' : $wuensche; ?></p>
 
-    ?>
 </body>
 
 </html>
