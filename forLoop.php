@@ -18,6 +18,8 @@
         echo "</br> \n";
     }
 
+    echo "<hr>";
+
     echo "<table border='1'>";
     echo "<th>Zahl</th><th>Quadrat der Zahl</th>";
     for ($i = 1; $i <= 10; $i++) {
