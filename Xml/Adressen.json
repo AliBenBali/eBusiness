@@ -1,0 +1,20 @@
+{
+  "Adressen": [
+    {
+      "id": "1",
+      "vorname": "Max",
+      "nachname": "Mustermann",
+      "strasse": "Mittelstrasse 2",
+      "plz": "32657",
+      "ort": "Lemgo"
+    },
+    {
+      "id": "2",
+      "vorname": "Eva",
+      "nachname": "Musterfrau",
+      "strasse": "Hauptstrasse 1",
+      "plz": "32756",
+      "ort": "Detmold"
+    }
+  ]
+}

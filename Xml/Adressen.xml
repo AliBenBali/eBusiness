@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Adressen [
+<!ELEMENT Adressen (Adresse)+>
+<!ELEMENT Adresse (Nummer,Vorname, Nachname, Strasse, PLZ, Ort)>
+<!ELEMENT Nummer (#PCDATA)>
+<!ELEMENT Vorname (#PCDATA)>
+<!ELEMENT Nachname (#PCDATA)>
+<!ELEMENT Strasse (#PCDATA)>
+<!ELEMENT PLZ (#PCDATA)>
+<!ELEMENT Ort (#PCDATA)>
+]>
+<Adressen>
+    <Adresse>
+        <Nummer>1</Nummer>
+        <Vorname>Max</Vorname>
+        <Nachname>Mustermann</Nachname>
+        <Strasse>Mittelstrasse 2</Strasse>
+        <PLZ>32657</PLZ>
+        <Ort>Lemgo</Ort>
+    </Adresse>
+    <Adresse>
+        <Nummer>2</Nummer>
+        <Vorname>Eva</Vorname>
+        <Nachname>Musterfrau</Nachname>
+        <Strasse>Hauptstrasse 1</Strasse>
+        <PLZ>32756</PLZ>
+        <Ort>Detmold</Ort>
+    </Adresse>
+</Adressen>

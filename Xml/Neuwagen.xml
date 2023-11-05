@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Autohaus>
+    <Neuwagen>
+        <marke>Audi</marke>
+        <preisBis>2.000 EUR</preisBis>
+        <kmBis>20.000</kmBis>
+        <land>Albanien</land>
+    </Neuwagen>
+</Autohaus>

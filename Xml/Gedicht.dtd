@@ -1,0 +1,14 @@
+<!ELEMENT Gedichtsammlung (Gedicht)+>
+<!ELEMENT Gedicht (Autor,Titel,Untertitel?,Strophe+)>
+<!ATTLIST Gedicht 
+    Erscheinungsjahr CDATA #REQUIRED
+    Sprache CDATA #REQUIRED    
+>
+<!ELEMENT Autor (Vorname,Nachname)>
+<!ELEMENT Vorname (#PCDATA)>
+<!ELEMENT Nachname (#PCDATA)>
+<!ELEMENT Titel (#PCDATA)>
+<!ELEMENT Untertitel (#PCDATA)>
+<!ELEMENT Strophe (Vers)+>
+<!ELEMENT Vers (#PCDATA|Fett)*>
+<!ELEMENT Fett (#PCDATA)>
