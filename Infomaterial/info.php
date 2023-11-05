@@ -7,9 +7,9 @@
     <meta name="Beschreibung" content="Bruh">
     <meta charset="UTF-8">
     <style>
-    .error {
-        color: #FF0000;
-    }
+        .error {
+            color: #FF0000;
+        }
     </style>
     <title>Infomaterial</title>
 </head>
@@ -81,7 +81,7 @@
                 <td>
 
                     <input type="text" id="i2" name="name" autofocus>
-                    <span class="error">* <?php echo $nameErr;?></span>
+                    <span class="error">* <?php echo $nameErr; ?></span>
                 </td>
             </tr>
             <tr>
@@ -90,7 +90,7 @@
                 </td>
                 <td>
                     <input type="text" name="strasse" id="i3">
-                    <span class="error">* <?php echo $strasseErr;?></span>
+                    <span class="error">* <?php echo $strasseErr; ?></span>
                 </td>
             </tr>
             <tr>
@@ -99,7 +99,7 @@
                 </td>
                 <td>
                     <input type="text" name="plz" maxlength="5" style="width: 40px;" pattern="[0-9]+">
-                    <span class="error">* <?php echo $plzErr;?></span>
+                    <span class="error">* <?php echo $plzErr; ?></span>
                 </td>
             </tr>
             <tr>
@@ -108,7 +108,7 @@
                 </td>
                 <td>
                     <input type="text" name="ort" required>
-                    <span class="error">* <?php echo $ortErr;?></span>
+                    <span class="error">* <?php echo $ortErr; ?></span>
                 </td>
             </tr>
         </table>

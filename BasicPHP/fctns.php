@@ -9,11 +9,11 @@
     //Ausgabe mit echo
     echo "<h1>Mein erstes PHP-Skript</h1>";
 
-	define("STEUERSATZ", 0.19);
+    define("STEUERSATZ", 0.19);
     function nettoZuBrutto($netto)
     {
-		
-        $brutto = $netto * (1+STEUERSATZ);
+
+        $brutto = $netto * (1 + STEUERSATZ);
         return round($brutto, 2);
     }
 

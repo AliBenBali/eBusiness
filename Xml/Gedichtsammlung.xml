@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8">
+<!DOCTYPE Gedichte SYSTEM "Gedicht.dtd">
+<Gedichtsammlung>
+	<Gedicht Erscheinungsjahr="1905" Sprache="de">
+		<Autor>
+			<Vorname>Rainer Maria</Vorname>
+			<Nachname>Rilke</Nachname>
+		</Autr>
+		<Tltel>Der Panther</Titel>
+		<Untertitel>Im Jardin des Plantes, Paris </Untertitel>
+		<Strophe>
+			<Vers>Sein Blick ist vom Vorübergehn der Stäbe</Vers>
+			<Vers>so müd geworden, daß er nichts mehr 	hält.</Vers>
+			<Vers>Ihm ist, als ob es tausend Stäbe gäbe</Vers>
+			<Vers> und hinter tausend Stäben keine Welt. </Vers>
+		<Strophe>
+			<Vers>Der weiche Gang geschmeidig starker Schritte, </Vers>
+			<Vers> der sich im allerkleinsten Kreise dreht, </Vers>
+			<Vers> ist wie ein Tanz von Kraft um eine Mitte, </Vers>
+			<Vers>in der betäubt ein großer Wille steht. </Vers>
+		</Strophe>
+		<Strophe>
+			<Vers> Nur manchmal schiebt der Vorhang der <Fett>Pupille</Fett>
+			</Vers>
+			<Vers>sich lautlos auf -. Dann geht ein Bild hinein, </Vers>
+			<Vers> geht durch der <Fett>Glieder</Fett> angespannte Stille - </Vers>
+			<Vers>und hört im <Fett>Herzen</Fett> auf zu sein. </Vers>
+		</Strophe>
+	<gedicht Erscheinungsjahr="1960" Sprache="de">
+		<Autor>
+			<Vorname>Heinz<nachname></Vorname>
+			Erhardt</nachname>
+		</Autor>
+		<Titel>
+Warum die Zitronen sauer wurden
+		<Strophe>
+			<Vers>Ich muß das wirklich mal betonen:</Vers>
+			<Vers>Ganz früher waren die Zitronen</Vers>
+			<Vers>(ich weiß nur nicht genau mehr, wann dies</Vers>
+			<Vers>gewesen ist) so süß wie Kandis.</Vers>
+		</Strophe>
+		<Strophe>
+			<Vers>Bis sie einst sprachen: "Wir Zitronen,</Vers>
+			<Vers>wir wollen groß sein wie Melonen!</Vers>
+			<Vers>Auch finden wir das Gelb abscheulich,</Vers>
+			<Vers>wir wollen rot sein oder bläulich!"</Vers>
+		</Strophe>
+		<Strophe>
+			<Vers>Gott hörte oben die Beschwerden
+			<Vers>und sagte: "Daraus kann nichts werden!
+			<Vers>Ihr müßt so bleiben! Ich bedauer!"
+			<Vers>Da wurden die Zitronen sauer . . .
+		</Strophe>
+	</Gedicht>
+</Gedichtsammlung>
+

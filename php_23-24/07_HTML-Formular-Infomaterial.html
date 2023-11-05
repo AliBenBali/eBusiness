@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="PH" />
+    <title>Formular Informationsmaterial</title>
+
+    <style>
+      label {
+        min-width: 75px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Infomaterial</h1>
+
+    <p>Bitte senden Sie mir Informationsmaterial!</p>
+    <form action="">
+      <p>
+        <label for="anrede">Anrede:</label>
+        <select id="anrede" name="anrede">
+          <option>Herr</option>
+          <option>Frau</option>
+          <option>Familie</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="Name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Bitte Vor- und Nachnamen eingeben"
+        />
+      </p>
+
+      <p>
+        <label for="strasse">Straße</label>
+        <input type="text" id="strasse" name="strasse" />
+      </p>
+
+      <p>
+        <label for="plz">PLZ</label>
+        <input type="text" id="plz" name="plz" maxlength="5" />
+        <!-- kein type="number", da es postleitzahlen gibt, die mit "0" beginnen -->
+      </p>
+
+      <p>
+        <label for="ort">Ort</label>
+        <input type="text" id="ort" name="ort" />
+      </p>
+
+      <p>
+        Ich beabsichtige einen Aufenthalt im<br />
+        <input
+          type="radio"
+          name="jahreszeit"
+          value="sommer"
+          id="jahreszeit-sommer"
+        /><label for="jahreszeit-sommer">Sommer</label><br />
+        <input
+          type="radio"
+          name="jahreszeit"
+          value="winter"
+          id="jahreszeit-winter"
+        /><label for="jahreszeit-winter">Winter</label>
+      </p>
+
+      <p>
+        <label for="wuensche">Ich habe folgende Wünsche:</label><br />
+        <textarea id="wuensche" name="wuensche"></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="absenden" /><input
+          type="reset"
+          value="Formular leeren"
+        />
+      </p>
+    </form>
+  </body>
+</html>

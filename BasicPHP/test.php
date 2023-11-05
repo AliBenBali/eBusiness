@@ -14,10 +14,10 @@
 
     $y = 4;
     $x = 2;
-    echo "Die Summe von" .$x ." und" .$y ." ist " .($y + $x). "!</br> \n";
-    echo "Die Summe von " .$x. " und" .$y. " ist ", $y + $x, "!</br> \n";
-	$ausgabe = "Die Summe von " .$x. " und " .$y. " ist " .($y + $x). "!</br> \n";
-	echo $ausgabe;
+    echo "Die Summe von" . $x . " und" . $y . " ist " . ($y + $x) . "!</br> \n";
+    echo "Die Summe von " . $x . " und" . $y . " ist ", $y + $x, "!</br> \n";
+    $ausgabe = "Die Summe von " . $x . " und " . $y . " ist " . ($y + $x) . "!</br> \n";
+    echo $ausgabe;
     echo "<table border='1'>";
     for ($i = 1; $i <= 3; $i++) {
         echo "<tr>";

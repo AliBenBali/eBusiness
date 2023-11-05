@@ -48,17 +48,17 @@
     }
 
     //insert data into table with sql 5 times
-  /*   $sql = "INSERT INTO MyGuests (name, email)
+    $sql = "INSERT INTO MyGuests (name, email)
     VALUES ('John', 'john@example.com');";
     $sql .= "INSERT INTO MyGuests (name, email)
     VALUES ('Mary', 'mary@example.com');";
     $sql .= "INSERT INTO MyGuests (name, email)
     VALUES ('Julie', 'julie@example.com');";
     $sql .= "INSERT INTO MyGuests (name, email)
-    VALUES ('Donald', 'donald@example.com');"; */
+    VALUES ('Donald', 'donald@example.com');";
 
     //show data from table in html table
-/*     $sql = "SELECT id, name, email FROM MyGuests";
+    $sql = "SELECT id, name, email FROM MyGuests";
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) > 0) {
         echo "<table><tr><th>ID</th><th>Name</th><th>Email</th></tr>";
@@ -69,9 +69,9 @@
         echo "</table>";
     } else {
         echo "0 results";
-    } */
+    }
 
-    /*     //delete donald
+    //delete donald
     $sql = "DELETE FROM MyGuests WHERE id=4";
     //update john to johnny
     $sql = "UPDATE MyGuests SET name='Johnny' WHERE id=1";
@@ -87,7 +87,7 @@
         echo "</table>";
     } else {
         echo "0 results";
-    } */
+    }
 
     //vscode comment block: shift + alt + a
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Erstes Formular</title>
+    <style>
+      label {
+        width: 80px;
+        display: inline-block;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="06_verarbeitung.php">
+      <p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+      </p>
+
+      <p>
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" />
+      </p>
+
+      <p>
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" />
+      </p>
+
+      <p>
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment"></textarea>
+      </p>
+
+      <p>
+        <label for="gender">Gender</label>
+        <input
+          type="radio"
+          name="gender"
+          value="female"
+          id="gender-female"
+        /><label for="gender-female">Female</label>
+        <input type="radio" name="gender" value="male" id="gender-male" /><label
+          for="gender-male"
+          >Male</label
+        >
+        <input
+          type="radio"
+          name="gender"
+          value="divers"
+          id="gender-divers"
+        /><label for="gender-divers">Divers</label>
+      </p>
+
+      <p>
+        <input type="submit" value="submit" />
+      </p>
+    </form>
+  </body>
+</html>
