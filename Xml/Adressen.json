@@ -1,20 +1,22 @@
 {
-  "Adressen": [
-    {
-      "id": "1",
-      "vorname": "Max",
-      "nachname": "Mustermann",
-      "strasse": "Mittelstrasse 2",
-      "plz": "32657",
-      "ort": "Lemgo"
-    },
-    {
-      "id": "2",
-      "vorname": "Eva",
-      "nachname": "Musterfrau",
-      "strasse": "Hauptstrasse 1",
-      "plz": "32756",
-      "ort": "Detmold"
-    }
-  ]
+  "Adressen": {
+      "Adresse": [
+          {
+              "Nummer": "1",
+              "Vorname": "Max",
+              "Nachname": "Mustermann",
+              "Strasse": "Mittelstrasse 2",
+              "PLZ": "32657",
+              "Ort": "Lemgo"
+          },
+          {
+              "Nummer": "2",
+              "Vorname": "Eva",
+              "Nachname": "Musterfrau",
+              "Strasse": "Hauptstrasse 1",
+              "PLZ": "32756",
+              "Ort": "Detmold"
+          }
+      ]
+  }
 }
