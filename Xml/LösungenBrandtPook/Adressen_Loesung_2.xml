@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE daten [
+<!ELEMENT daten		(adresse*)>
+<!ELEMENT adresse	EMPTY>
+
+<!ATTLIST	adresse	nummer		CDATA	#IMPLIED
+					vorname		CDATA #IMPLIED
+					nachname	CDATA #IMPLIED
+					strasse		CDATA #IMPLIED
+					plz			CDATA #IMPLIED
+					ort			CDATA #IMPLIED>
+]>
+
+
+<daten>
+	<adresse nummer="1" vorname="Max" nachname="Mustermann" strasse="Mittelstrasse 2" plz="32657" ort="Lemgo" />
+	<adresse nummer="2" vorname="Eva" nachname="Musterfrau" strasse="Hauptstrasse 1" plz="32756" ort="Detmold" />
+</daten>
+

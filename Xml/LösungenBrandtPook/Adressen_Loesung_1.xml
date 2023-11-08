@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE adressen [
+<!ELEMENT adressen		(data*)>
+<!ELEMENT data			(vorname, nachname, strasse, plz, ort)>
+<!ELEMENT vorname 		(#PCDATA)>
+<!ELEMENT nachname		(#PCDATA)>
+<!ELEMENT strasse 		(#PCDATA)>
+<!ELEMENT plz	 		(#PCDATA)>
+<!ELEMENT ort		 	(#PCDATA)>
+
+
+<!ATTLIST data nummer CDATA #IMPLIED>
+]>
+
+
+<adressen>
+	<data nummer="1">
+		<vorname>Max</vorname>
+		<nachname>Mustermann</nachname>
+		<strasse>Mittelstrasse 2</strasse>
+		<plz>32657</plz>
+		<ort>Lemgo</ort>
+	</data>
+
+	<data nummer="2">
+		<vorname>Eva</vorname>
+		<nachname>Musterfrau</nachname>
+		<strasse>Hauptstrasse 1</strasse>
+		<plz>32756</plz>
+		<ort>Detmold</ort>
+	</data>
+</adressen>
+
