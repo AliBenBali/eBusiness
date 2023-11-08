@@ -17,10 +17,10 @@ Sprache CDATA #IMPLIED>
 ]>
 
 <Gedichtsammlung>
-<Gedicht Erscheinungsjahr="1905" Sprache="de">
+	<Gedicht Erscheinungsjahr="1905" Sprache="de">
 		<Autor>
-		<Vorname>Rainer Maria</Vorname>
-		<Nachname>Rilke</Nachname>
+			<Vorname>Rainer Maria</Vorname>
+			<Nachname>Rilke</Nachname>
 		</Autor>
 		<Titel>Der Panther</Titel>
 		<Untertitel>Im Jardin des Plantes, Paris </Untertitel>
@@ -37,16 +37,17 @@ Sprache CDATA #IMPLIED>
 			<Vers>in der betäubt ein großer Wille steht. </Vers>
 		</Strophe>
 		<Strophe>
-			<Vers> Nur manchmal schiebt der Vorh. der<Fett>Pupille</Fett></Vers>
+			<Vers> Nur manchmal schiebt der Vorh. der<Fett>Pupille</Fett>
+			</Vers>
 			<Vers>sich lautlos auf -. Dann geht ein Bild hinein, </Vers>
 			<Vers> geht durch der <Fett>Glieder</Fett> angespannte Stille</Vers>
 			<Vers>und hört im <Fett>Herzen</Fett> auf zu sein. </Vers>
 		</Strophe>
-	       </Gedicht>
-<Gedicht Erscheinungsjahr="1960" Sprache="de">
+	</Gedicht>
+	<Gedicht Erscheinungsjahr="1960" Sprache="de">
 		<Autor>
-		<Vorname>Heinz</Vorname>
-		<Nachname>Erhardt</Nachname>
+			<Vorname>Heinz</Vorname>
+			<Nachname>Erhardt</Nachname>
 		</Autor>
 		<Titel>Warum die Zitronen sauer wurden</Titel>
 		<Strophe>
@@ -67,5 +68,5 @@ Sprache CDATA #IMPLIED>
 			<Vers>Ihr müßt so bleiben! Ich bedauer!" </Vers>
 			<Vers>Da wurden die Zitronen sauer . . . </Vers>
 		</Strophe>
-		</Gedicht>
+	</Gedicht>
 </Gedichtsammlung>

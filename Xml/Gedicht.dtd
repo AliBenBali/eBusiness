@@ -1,8 +1,8 @@
 <!ELEMENT Gedichtsammlung (Gedicht)+>
 <!ELEMENT Gedicht (Autor,Titel,Untertitel?,Strophe+)>
 <!ATTLIST Gedicht 
-    Erscheinungsjahr CDATA #REQUIRED
-    Sprache CDATA #REQUIRED    
+    Erscheinungsjahr CDATA #IMPLIED
+    Sprache CDATA #IMPLIED    
 >
 <!ELEMENT Autor (Vorname,Nachname)>
 <!ELEMENT Vorname (#PCDATA)>

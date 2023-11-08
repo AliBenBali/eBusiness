@@ -8,9 +8,12 @@
 <!ELEMENT Strasse (#PCDATA)>
 <!ELEMENT PLZ (#PCDATA)>
 <!ELEMENT Ort (#PCDATA)>
+
+<!ATTLIST Adresse nummer CDATA #IMPLIED>
+]>
 ]>
 <Adressen>
-    <Adresse>
+    <Adresse nummer ="1">
         <Nummer>1</Nummer>
         <Vorname>Max</Vorname>
         <Nachname>Mustermann</Nachname>
@@ -18,7 +21,7 @@
         <PLZ>32657</PLZ>
         <Ort>Lemgo</Ort>
     </Adresse>
-    <Adresse>
+    <Adresse nummer="2">
         <Nummer>2</Nummer>
         <Vorname>Eva</Vorname>
         <Nachname>Musterfrau</Nachname>
